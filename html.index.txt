@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Omwandho Graphic Lab</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#0a0a0a;
+color:white;
+text-align:center;
+}
+
+header{
+background:black;
+padding:20px;
+position:sticky;
+top:0;
+}
+
+h1{
+color:#00ffff;
+}
+
+section{
+padding:70px 20px;
+}
+
+.hero{
+padding:120px 20px;
+background:linear-gradient(45deg,#000,#111);
+}
+
+.hero h2{
+font-size:40px;
+color:#00ffff;
+}
+
+button{
+padding:12px 25px;
+background:#00ffff;
+border:none;
+border-radius:6px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.gallery img{
+width:260px;
+margin:10px;
+border-radius:10px;
+}
+
+input,textarea,select{
+width:90%;
+padding:10px;
+margin:10px;
+border-radius:6px;
+border:none;
+}
+
+.social a{
+display:inline-block;
+margin:10px;
+color:#00ffff;
+text-decoration:none;
+font-size:18px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px 20px;
+border-radius:50px;
+color:white;
+text-decoration:none;
+}
+
+#chat{
+position:fixed;
+bottom:90px;
+right:20px;
+width:250px;
+background:black;
+border-radius:10px;
+display:none;
+}
+
+#chat p{
+padding:10px;
+border-bottom:1px solid gray;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Omwandho Graphic Lab</h1>
+
+</header>
+
+
+<div class="hero">
+
+<h2>Peter Omwandho</h2>
+
+<p>
+Professional Graphic Designer from Thika Kenya
+specializing in logos, posters, branding and social media graphics.
+</p>
+
+<a href="https://wa.me/254758560246">
+
+<button>Start Project</button>
+
+</a>
+
+</div>
+
+
+<section>
+
+<h2>Portfolio</h2>
+
+<div class="gallery">
+
+<img src="https://picsum.photos/400/300">
+
+<img src="https://picsum.photos/401/300">
+
+<img src="https://picsum.photos/402/300">
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Order a Design</h2>
+
+<form action="https://formspree.io/f/yourID" method="POST">
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email">
+
+<select>
+
+<option>Logo Design</option>
+
+<option>Poster Design</option>
+
+<option>Brand Identity</option>
+
+<option>YouTube Thumbnail</option>
+
+</select>
+
+<textarea placeholder="Describe your design"></textarea>
+
+<button type="submit">Send Order</button>
+
+</form>
+
+</section>
+
+
+<section>
+
+<h2>Book Consultation</h2>
+
+<iframe
+src="https://calendly.com/"
+width="90%" height="500"></iframe>
+
+</section>
+
+
+<section>
+
+<h2>Payments</h2>
+
+<p>M-Pesa Number: 0758560246</p>
+
+<p>Name: Peter Omwandho</p>
+
+<a href="https://www.paypal.com">
+
+<button>Pay with PayPal</button>
+
+</a>
+
+</section>
+
+
+<section>
+
+<h2>Contact</h2>
+
+<p>Email: omwandhopeter89@gmail.com</p>
+
+<p>Phone: +254758560246</p>
+
+</section>
+
+
+<section>
+
+<h2>Find Us</h2>
+
+<iframe
+src="https://maps.google.com/maps?q=thika%20kenya&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="90%" height="300">
+</iframe>
+
+</section>
+
+
+<section>
+
+<h2>Social Media</h2>
+
+<div class="social">
+
+<a href="https://www.instagram.com/omwandhopeter89">Instagram</a>
+
+<a href="https://youtube.com/@omwandhographiclab">YouTube</a>
+
+<a href="https://www.tiktok.com/@omwandhodesigner">TikTok</a>
+
+</div>
+
+</section>
+
+
+<a class="whatsapp"
+href="https://wa.me/254758560246">
+
+WhatsApp
+
+</a>
+
+
+<div id="chat">
+
+<p>Hello 👋</p>
+
+<p>I am Omwandho AI assistant.</p>
+
+<p>Need logo, poster or branding?</p>
+
+<p>
+
+<a href="https://wa.me/254758560246">
+
+Chat with designer
+
+</a>
+
+</p>
+
+</div>
+
+
+<button onclick="chatToggle()"
+style="position:fixed;bottom:90px;left:20px">
+
+AI Help
+
+</button>
+
+
+<script>
+
+function chatToggle(){
+
+let c=document.getElementById("chat")
+
+if(c.style.display=="none"){
+
+c.style.display="block"
+
+}else{
+
+c.style.display="none"
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
